@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>…</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+  <main class="cool-page">
+    <p class="cool-instruction anim-fade-down" id="instruction">click the right statement 10 times to go ahead</p>
+    <p class="cool-progress anim-fade-down anim-delay-1" id="progress-wrap"><span id="progress">0</span> / 10</p>
+
+    <div class="cool-stage" id="stage">
+      <button type="button" class="cool-wrong anim-fade-up anim-delay-2" id="wrong-btn">
+        <span class="cool-victim-wrap" id="victim-wrap">
+          <span class="cool-name cool-name--victim" id="trushti-name">trushti</span>
+        </span>
+        is so cool
+      </button>
+
+      <button type="button" class="cool-right anim-fade-up anim-delay-3" id="right-btn">
+        <span class="cool-hero-wrap" id="hero-wrap">
+          <span class="cool-name cool-name--hero" id="kartik-name">
+            <span class="cool-sword" id="kartik-sword" aria-hidden="true">🗡️</span>
+            kartik
+          </span>
+        </span>
+        is so cool
+      </button>
+    </div>
+  </main>
+
+  <div class="cool-pop-layer" id="pop-layer" aria-hidden="true"></div>
+
+  <script src="cool.js"></script>
+</body>
+</html>

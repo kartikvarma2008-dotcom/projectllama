@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>…</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+  <script>
+    if (sessionStorage.getItem("coolPassed") !== "true") {
+      window.location.replace("cool.html");
+    }
+  </script>
+</head>
+<body>
+
+  <main class="game-page">
+    <p class="game-line anim-fade-up">lets play a little game here</p>
+    <p class="game-line game-line--muted anim-fade-up anim-delay-1">below are two statements</p>
+
+    <div class="game-choices anim-fade-up anim-delay-2">
+      <a class="game-choice game-choice--good" href="sure.html">
+        <span class="game-choice-spark" aria-hidden="true">✨</span>
+        i think i like you
+      </a>
+
+      <div class="trap-orbit-wrap">
+        <div class="trap-ring" aria-hidden="true">
+          <span class="trap-emoji" style="--angle: 0deg">😱</span>
+          <span class="trap-emoji" style="--angle: 45deg">😱</span>
+          <span class="trap-emoji" style="--angle: 90deg">😱</span>
+          <span class="trap-emoji" style="--angle: 135deg">😱</span>
+          <span class="trap-emoji" style="--angle: 180deg">😱</span>
+          <span class="trap-emoji" style="--angle: 225deg">😱</span>
+          <span class="trap-emoji" style="--angle: 270deg">😱</span>
+          <span class="trap-emoji" style="--angle: 315deg">😱</span>
+        </div>
+        <div class="trap-glow" aria-hidden="true"></div>
+        <a class="game-choice game-choice--trap" href="stupid.html">
+          aditya kapoor has the biggest crush on you
+        </a>
+      </div>
+    </div>
+
+    <p class="game-line game-line--emphasis anim-fade-up anim-delay-3">choose your poison</p>
+    <p class="game-line game-line--muted anim-fade-up anim-delay-4">one of this is true.</p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

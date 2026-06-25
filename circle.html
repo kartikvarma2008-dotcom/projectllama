@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>…</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+  <script>
+    if (sessionStorage.getItem("dinoPassed") !== "true") {
+      window.location.replace("dino.html");
+    }
+  </script>
+</head>
+<body>
+
+  <main class="circle-page">
+    <h1 class="circle-title">draw a circle. kinda.</h1>
+
+    <p class="circle-score">accuracy: <span id="accuracy">—</span>%</p>
+
+    <div class="circle-canvas-wrap">
+      <canvas id="draw" width="320" height="320" aria-label="Draw a circle"></canvas>
+    </div>
+
+    <p class="circle-hint" id="hint">draw any loop — doesnt have to be perfect</p>
+
+    <p class="circle-success" id="success" hidden>ok thats a circle. you passed.</p>
+
+    <button type="button" class="choice-btn circle-clear" id="clear-btn" hidden>try again</button>
+  </main>
+
+  <script src="circle.js"></script>
+</body>
+</html>

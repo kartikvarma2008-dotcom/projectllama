@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>...</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+  <script>
+    if (sessionStorage.getItem("potionPassed") !== "true") {
+      window.location.replace("potion.html");
+    }
+  </script>
+</head>
+<body>
+
+  <main class="classroom-page">
+    <section class="classroom-scene" aria-label="Classroom animation">
+      <div class="chalkboard">
+        <div class="chalkboard-surface">
+          <p class="board-line board-line--title" id="board-title"></p>
+          <ul class="board-list" aria-label="Reasons">
+            <li id="board-line-1"></li>
+            <li id="board-line-2"></li>
+            <li id="board-line-3"></li>
+          </ul>
+        </div>
+        <div class="chalk-dust" aria-hidden="true"></div>
+      </div>
+
+      <div class="teacher" aria-hidden="true">
+        <span class="stick-head"></span>
+        <span class="stick-body"></span>
+        <span class="stick-arm stick-arm--left"></span>
+        <span class="stick-arm stick-arm--right"></span>
+        <span class="stick-leg stick-leg--left"></span>
+        <span class="stick-leg stick-leg--right"></span>
+        <span class="teacher-pointer"></span>
+      </div>
+
+      <div class="students" aria-hidden="true">
+        <span class="student student--one"><i></i><b>wow</b></span>
+        <span class="student student--two"><i></i><b>so true</b></span>
+        <span class="student student--three"><i></i><b>real</b></span>
+        <span class="student student--four"><i></i><b>kartik is so cool</b></span>
+        <span class="student student--five"><i></i><b>dream guy fr</b></span>
+        <span class="student student--six"><i></i><b>must be a cutie</b></span>
+        <span class="student student--seven"><i></i><b>man i also want a kartik</b></span>
+      </div>
+    </section>
+
+    <a class="choice-btn classroom-continue" id="classroom-continue" href="game.html" hidden>continue</a>
+  </main>
+
+  <script src="classroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/*
+  YOUR DESIGN FILE — this is yours.
+
+  Anything you write here overrides styles.css.
+  Start small. Change one thing, refresh the browser, see how it feels.
+
+  Examples (uncomment to try):
+
+  :root {
+    --bg: #1a1814;
+    --text: #f0ebe3;
+    --muted: #a89f94;
+    --border: #3d3832;
+    --accent: #c9a87c;
+  }
+
+  .opening-line {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .signature {
+    text-align: right;
+    font-size: 1.2em;
+  }
+
+  .block--confession p:first-child::first-letter {
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.85;
+    margin: 0.08em 0.12em 0 0;
+  }
+*/

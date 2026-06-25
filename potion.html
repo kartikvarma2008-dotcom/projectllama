@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>...</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+  <script>
+    if (sessionStorage.getItem("coolPassed") !== "true") {
+      window.location.replace("cool.html");
+    }
+  </script>
+</head>
+<body>
+
+  <main class="potion-page">
+    <section class="potion-lab" aria-labelledby="potion-title">
+      <div class="potion-copy">
+        <p class="potion-kicker anim-fade-down">one last experiment</p>
+        <h1 class="potion-title anim-fade-up" id="potion-title">brew the potion</h1>
+        <p class="potion-message anim-fade-up anim-delay-1" id="potion-message">
+          drag every ingredient into the beaker
+        </p>
+      </div>
+
+      <div class="potion-workbench">
+        <div class="beaker-zone" id="beaker-zone" aria-label="Potion beaker">
+          <div class="beaker">
+            <div class="beaker-liquid" id="beaker-liquid"></div>
+            <div class="beaker-shine"></div>
+            <div class="beaker-bubbles" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p class="beaker-label" id="beaker-label">empty</p>
+        </div>
+
+        <div class="ingredient-shelf" id="ingredient-shelf" aria-label="Ingredients">
+          <button class="ingredient" type="button" draggable="true" data-ingredient="asphodel">
+            <span class="ingredient-icon ingredient-icon--powder"></span>
+            <span>powdered root of asphodel</span>
+          </button>
+          <button class="ingredient" type="button" draggable="true" data-ingredient="hair">
+            <span class="ingredient-icon ingredient-icon--hair"></span>
+            <span>unicorn hair</span>
+          </button>
+          <button class="ingredient" type="button" draggable="true" data-ingredient="dust">
+            <span class="ingredient-icon ingredient-icon--dust"></span>
+            <span>starlight dust</span>
+          </button>
+          <button class="ingredient" type="button" draggable="true" data-ingredient="moonstone">
+            <span class="ingredient-icon ingredient-icon--stone"></span>
+            <span>moonstone</span>
+          </button>
+        </div>
+      </div>
+
+      <a class="choice-btn potion-continue" id="potion-continue" href="classroom.html" hidden>continue</a>
+    </section>
+
+    <button class="secret-ingredient" type="button" draggable="true" data-ingredient="you" id="secret-ingredient" hidden>
+      <span class="secret-ingredient-label">you</span>
+    </button>
+  </main>
+
+  <script src="potion.js"></script>
+</body>
+</html>

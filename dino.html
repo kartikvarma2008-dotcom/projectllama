@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Something I needed to say.">
+  <title>…</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+  <main class="dino-page">
+    <h1 class="dino-brand">
+      <span class="dino-brand-old">dino</span>
+      <span class="dino-brand-new">llama run</span>
+    </h1>
+
+    <p class="dino-title">get 250 or you cant move ahead</p>
+
+    <p class="dino-score">score: <span id="score">0</span> / 250</p>
+
+    <div class="dino-canvas-wrap">
+      <canvas id="game" width="600" height="180" aria-label="Dino run game"></canvas>
+    </div>
+
+    <p class="dino-hint" id="hint">space or tap to jump · press again after crashing to retry</p>
+
+    <a class="choice-btn dino-continue" id="continue-btn" href="cool.html" hidden>continue</a>
+  </main>
+
+  <script src="dino.js"></script>
+</body>
+</html>
